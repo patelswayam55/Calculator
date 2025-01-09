@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="box-text">
+      <h1>CASIO</h1>
+    </div>
+
+    <div class="display">
+      <input type="text" id="inputBox" value=" " />
+    </div>
+
+    <div class="basic-keys">
+      <div class="row">
+        <button type="button" class="btn">7</button>
+        <button type="button" class="btn">8</button>
+        <button type="button" class="btn">9</button>
+        <button type="button" class="funckey" id="DE">DEL</button>
+        <button type="button" class="funckey" id="AC" onclick="screen.value=' '">
+          AC
+        </button>
+      </div>
+      <div class="row">
+        <button type="button" class="btn">4</button>
+        <button type="button" class="btn">5</button>
+        <button type="button" class="btn">6</button>
+        <button type="button" class="btn">x</button>
+        <button type="button" class="btn">÷</button>
+      </div>
+      <div class="row">
+        <button type="button" class="btn">1</button>
+        <button type="button" class="btn">2</button>
+        <button type="button" class="btn">3</button>
+        <button type="button" class="btn">+</button>
+        <button type="button" class="btn">-</button>
+      </div>
+      <div class="row">
+        <button type="button" class="btn">0</button>
+
+        <button type="button" class="btn" id="sqrt">√</button>
+        <button type="button" id="eval" onclick="result()">=</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
